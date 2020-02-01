@@ -38,18 +38,20 @@ AVBook 是基于 Laravel 开发的 Web 应用程序，通过 Artisan 控制台�
 
     php artisan avbook:javbus --movie=1 --page=10 --magpage=10 #启动javbus爬虫
 
-    php artisan scandir --path='/moviefiles' #扫描指定目录moviefiles中的文件，正则匹配番号，设置为已拥有状态
+    php artisan scandir --path='/moviefiles' #扫描指定目录 /moviefiles 中的文件，正则匹配番号，设置为已拥有状态
 
-    php artisan avbook:javlib --genre --movie  #javlibrary爬虫
+    php artisan avbook:javlib --genre --movie  #javlibrary 爬虫
 
 以上操作适用于Linux环境
 
 ## For windows 用户
 
-这里提供一份开箱即用的压缩包 [avbook_laragon.7z](https://pan.baidu.com/s/1LPeGNNy-3MEDC0g9EbusLg)
+这里提供一份开箱即用的压缩包 [avbook_laragon.7z](https://pan.baidu.com/s/1JCfISyckxy9qNtYjo5RH-w)
 
-链接：<https://pan.baidu.com/s/1LPeGNNy-3MEDC0g9EbusLg> 
-提取码：gmmg 
+链接：<https://pan.baidu.com/s/1JCfISyckxy9qNtYjo5RH-w> 
+提取码：xug8 
+
+备用下载地址(慢)：[releases](https://github.com/guyueyingmu/avbook/releases/download/v.0.19.7.11/avbook_laragon.0.19.7.11.7z)
 
 压缩包中包含更新到2019.5.12的全部数据
 
@@ -61,12 +63,12 @@ AVBook 是基于 Laravel 开发的 Web 应用程序，通过 Artisan 控制台�
     3.点击 `网站` 或者访问 <http://avbook.test>  enjoy it
     
    >ps:<br>
-     Ⅰ. 如果没有解压到 D:\laragon 需自行修改Nginx配置，并在hosts文件新增一行 ：`127.0.0.1      avbook.test` <br>
+     Ⅰ. 如果没有解压到 D:\laragon 需自行修改Nginx配置，php.ini配置，并在hosts文件新增一行 ：`127.0.0.1      avbook.test` <br>
      Ⅱ. laragon终端启动爬虫前先 `git pull ` 更新到最新版本。
 
 ## 其他注意事项
 
-avmoo 有反爬虫机制，目前的反反爬虫方法是修改 User-Agent ，用的人多了应该会失效，建议下载[avbook_laragon.7z](https://pan.baidu.com/s/1LPeGNNy-3MEDC0g9EbusLg)导入数据库，进行增量更新。
+avmoo 有反爬虫机制，目前的反反爬虫方法是修改 User-Agent ，用的人多了应该会失效，建议下载[avbook_laragon.7z](https://pan.baidu.com/s/1JCfISyckxy9qNtYjo5RH-w)导入数据库，进行增量更新。
 
 windows 下 mysql 性能有限，需耐心等待，建议将数据库导入 [homestead](https://github.com/laravel/homestead) 使用。
 
@@ -74,8 +76,12 @@ windows 下 mysql 性能有限，需耐心等待，建议将数据库导入 [hom
 
 必须等 avmoo 采集完成，才能启动 javbus 爬虫。
 
-最后，北京第三区交通委提醒您：道路千万条，安全第一条。飙车一时爽，一直飙一直爽。。。
+~~最后，北京第三区交通委提醒您：道路千万条，安全第一条。飙车一时爽，一直飙一直爽。。。~~
+
+2019.7.19 up，不好意思，你来晚了，爬虫已失效[#issues/60](https://github.com/guyueyingmu/avbook/issues/60)，车暂时开不动了，重新发车时间待定，关注公众号：guyueyingmu （孤月盈木）接收通知。
 
 ## License
 
 The AVBook is open-source software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+gyym.avbook.bt.01
